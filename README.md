@@ -6,4 +6,4 @@ In this database we collected linguistic examples given in dictionaries from Akh
 
 The used materials are based on [the Comparative Andic dictionary database](https://github.com/phon-dicts-project/comparative_andic_dictionary_database).
 
-For interactive website look [here]().
+For interactive website look [here](lingconlab.github.io/andic_dictionary_examples_database/).
