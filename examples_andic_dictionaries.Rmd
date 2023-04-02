@@ -15,7 +15,8 @@ editor_options:
 
 ###  The Andic Dictionaries Examples Database {.tabset .tabset-fade .tabset-pills}
 
-[![DOI]
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7793144.svg)](https://doi.org/10.5281/zenodo.7793144)
+
 
 In this database linguistic examples are collected from various dictionaries of Andic languages. This database is based on [the Comparative Andic dictionary database](https://github.com/phon-dicts-project/comparative_andic_dictionary_database). Some characters may be displayed incorrectly.
 At the moment some entries may lack actual instances of usage.
@@ -26,6 +27,7 @@ Download database: [.csv](https://raw.githubusercontent.com/LingConLab/andic_dic
 knitr::opts_chunk$set(echo=FALSE, message=FALSE)
 library(tidyverse)
 
+# ids taken from andic dictionary db: https://github.com/phon-dicts-project/comparative_andic_dictionary_database
 db <- read_csv('andic_examples.csv') %>% 
   select(-c(id_word,id_meaning,id))
 
