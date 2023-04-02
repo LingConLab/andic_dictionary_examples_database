@@ -20,7 +20,7 @@ editor_options:
 In this database linguistic examples are collected from various dictionaries of Andic languages. This database is based on [the Comparative Andic dictionary database](https://github.com/phon-dicts-project/comparative_andic_dictionary_database). Some characters may be displayed incorrectly.
 At the moment some entries may lack actual instances of usage.
 
-Download database: [.csv]()
+Download database: [.csv](https://raw.githubusercontent.com/LingConLab/andic_dictionary_examples_database/main/andic_examples.csv)
 
 ```{r setup, include=FALSE, warning=F}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE)
