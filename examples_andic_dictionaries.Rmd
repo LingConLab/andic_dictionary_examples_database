@@ -1,4 +1,5 @@
 ---
+title: The Andic Dictionaries Examples Database
 output: 
   html_document:
     include:
@@ -12,9 +13,6 @@ editor_options:
   chunk_output_type: console
 ---
 
-
-###  The Andic Dictionaries Examples Database {.tabset .tabset-fade .tabset-pills}
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7793144.svg)](https://doi.org/10.5281/zenodo.7793144)
 
 
@@ -23,24 +21,25 @@ At the moment some entries may lack actual instances of usage.
 
 Download database: [.csv](https://raw.githubusercontent.com/LingConLab/andic_dictionary_examples_database/main/andic_examples.csv)
 
-```{r setup, include=FALSE, warning=F}
-knitr::opts_chunk$set(echo=FALSE, message=FALSE)
+```{r setup, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 library(tidyverse)
-
+library(DT)
 # ids taken from andic dictionary db: https://github.com/phon-dicts-project/comparative_andic_dictionary_database
 db <- read_csv('andic_examples.csv') %>% 
-  select(-c(id_word,id_meaning,id))
-
+  select(-c(id_word,id_meaning,id, reference))
 ```
 
 
-```{r warning=F}
+```{r}
 db %>% 
-  select(-reference) %>% 
-  DT::datatable(filter = 'top', rownames = FALSE, options = list(pageLength = 20, dom = 'tip'), escape = FALSE)
+  datatable(filter = 'top', rownames = TRUE,
+            options = list(pageLength = 20, dom = 'tip',
+                           initComplete = JS(readLines("palochka.js"))))
 ```
 
-# References
+## References
+
 - Alekseev, M.E., & Azayev H.G. (2019). *Botlixsko-russkij slovar’ [Botlikh-Russian dictionary]*. Moscow: Academia.
 - Magomedova, P. T. (1999). *Čamalinsko-russkij slovarʹ [Chamalal-Russian dictionary]*. Makhachkala: IJaLI.
 - Magomedova, P. T. (2003). *Tindinsko-russkij slovarʹ [Tindi-Russian dictionary]*. Makhachkala: IJaLI.
