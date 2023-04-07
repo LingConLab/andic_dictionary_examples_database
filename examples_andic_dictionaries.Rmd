@@ -21,7 +21,9 @@ In this database linguistic examples are collected from various dictionaries of 
 To search for words with cyrillic palochka symbol you can use latin uppercase "I" or "Ӏ" palochka itself.
 
 
-Download database: [.csv](https://raw.githubusercontent.com/LingConLab/andic_dictionary_examples_database/main/andic_examples.csv)
+[Download full database in .csv format](https://raw.githubusercontent.com/LingConLab/andic_dictionary_examples_database/main/andic_examples.csv)
+
+With the corresponding buttons below you can copy, export to csv and excel currently filtered table.
 
 ```{r setup, include=FALSE, warning=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
@@ -35,8 +37,12 @@ db <- read_csv('andic_examples.csv') %>%
 
 ```{r}
 db %>% 
-  datatable(filter = 'top', rownames = TRUE,
-            options = list(pageLength = 20, dom = 'tip',
+  datatable(filter = 'top',
+            extensions = 'Buttons',
+            rownames = TRUE,
+            options = list(pageLength = 20, 
+                           dom = 'Btip',
+                           buttons = c('copy','csv','excel'),
                            initComplete = JS(readLines("palochka.js"))))
 ```
 
