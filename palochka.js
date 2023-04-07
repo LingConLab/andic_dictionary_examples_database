@@ -5,7 +5,7 @@ function(settings){
   $inputs.off('keyup search input').on('keyup', function(){
     var index = 1 + $inputs.index(this);
     if(index === 2 || index === 4){ // id of the column to filter; CHANGE if needed
-    	var keyword = $(this).val().replaceAll('1','Ӏ').replaceAll('I','Ӏ');
+    	var keyword = $(this).val().replaceAll('I','Ӏ');
     } else {
 	var keyword = $(this).val();
     }
