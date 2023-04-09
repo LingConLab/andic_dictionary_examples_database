@@ -18,7 +18,7 @@ editor_options:
 
 In this database linguistic examples are collected from various dictionaries of Andic languages. This database is based on [the Comparative Andic dictionary database](https://github.com/phon-dicts-project/comparative_andic_dictionary_database). Some characters can be displayed incorrectly. At the moment some entries may lack actual instances of usage.
 
-To search for words with cyrillic palochka symbol you can use latin uppercase "I" or "Ӏ" palochka itself.
+To search for words with Cyrillic palochka symbol you can use Latin uppercase "I", digit "1", exclamation mark "!" or uppercase palochka itself ("Ӏ"). For "ᴴ" you can type Cyrillic "н". Accents are neutralized, e.g. you can search for letters like "ā" by typing just "a". Note that regular expressions are supported (e.g., "." stands for any symbol, ".*" - any symbol zero or more times,".+" - any symbol 1 or more times).
 
 
 [Download full database in .csv format](https://raw.githubusercontent.com/LingConLab/andic_dictionary_examples_database/main/andic_examples.csv)
@@ -31,7 +31,7 @@ library(tidyverse)
 library(DT)
 # ids originated from andic dictionary db: https://github.com/phon-dicts-project/comparative_andic_dictionary_database
 db <- read_csv('andic_examples.csv') %>% 
-  select(-c(id_word,id_meaning,id, reference))
+  select(-c(id_word,id_meaning,id))
 ```
 
 
@@ -39,11 +39,12 @@ db <- read_csv('andic_examples.csv') %>%
 db %>% 
   datatable(filter = 'top',
             extensions = 'Buttons',
-            rownames = TRUE,
-            options = list(pageLength = 20, 
+            plugins = "accent-neutralise", # works with BOTH "comibining acute accent" with cyrillic and combining macron
+            rownames = F,
+            options = list(pageLength = 15, 
                            dom = 'Btip',
                            buttons = c('copy','csv','excel'),
-                           initComplete = JS(readLines("palochka.js"))))
+                           initComplete = JS(readLines("character_map.js"))))
 ```
 
 ## References
