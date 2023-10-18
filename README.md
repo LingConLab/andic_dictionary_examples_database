@@ -11,3 +11,6 @@ For interactive website with the datatable look [here](lingconlab.github.io/andi
 Contributors:
 - Kirill Chuprinko: original dictionaries database transformations, minor fixes, repository maintanance
 - Leah Finkelberg: splitting strings containing target language example and Russian translation into two strings
+
+
+If you spot any problems, please open [an issue](https://github.com/LingConLab/andic_dictionary_examples_database/issues/new)
