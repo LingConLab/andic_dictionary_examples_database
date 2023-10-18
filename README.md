@@ -6,4 +6,8 @@ In this database we collected linguistic examples given in dictionaries from Akh
 
 The project is based on [the Comparative Andic dictionary database](https://github.com/phon-dicts-project/comparative_andic_dictionary_database).
 
-For interactive website look [here](lingconlab.github.io/andic_dictionary_examples_database/).
+For interactive website with the datatable look [here](lingconlab.github.io/andic_dictionary_examples_database/).
+
+Contributors:
+- Kirill Chuprinko: original dictionaries database transformations, minor fixes, repository maintanance
+- Leah Finkelberg: splitting strings containing target language example and Russian translation into two strings
