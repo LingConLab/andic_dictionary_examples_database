@@ -47,3 +47,7 @@ db %>%
 - Magomedova, P. T., & Xalidova, R. Š. (2001). *Karatinsko-russkij slovarʹ [Karata-Russian dictionary]*. Makhachkala: IJaLI.
 - Saidova, P. A. (2006). *Godoberinsko-russkij slovarʹ [Godoberi-Russian dictionary]*. Makhachkala: DNC RAN Institut jazyka, literatury i iskusstva im. G. Cadasy i Institut évoljucionnoj antropologii im. M. Planka.
 - Saidova, P. A., & Abusov, M. G. (2012). *Botlixsko-russkij slovarʹ [Botlikh-Russian dictionary]*. Makhachkala: DNC RAN Institut jazyka, literatury i iskusstva im. G. Cadasy i Institut évoljucionnoj antropologii im. M. Planka.
+
+## Cite as the following:
+
+Chuprinko K., G. Moroz, L. Finkelberg, (2023)  Comparative Andic dictionary database, v. 0.0.2 Moscow: Linguistic Convergence Laboratory, HSE University. [cited ...]. Available from: https://github.com/LingConLab/andic_dictionary_examples_database. DOI: 10.5281/zenodo.7793144
