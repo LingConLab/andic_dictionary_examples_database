@@ -9,9 +9,9 @@ execute:
 page-layout: full
 doi: 10.5281/zenodo.7793144
 ---
-In this database linguistic examples are collected from various dictionaries of the Andic languages. This database is based on [the Comparative Andic dictionary database](https://github.com/phon-dicts-project/comparative_andic_dictionary_database). [Download full database in .csv format.](https://raw.githubusercontent.com/LingConLab/andic_dictionary_examples_database/main/andic_examples.csv)
+In this database linguistic examples are collected from various dictionaries of the Andic languages. This database is based on [the Comparative Andic dictionary database](https://github.com/phon-dicts-project/comparative_andic_dictionary_database). [Download the full examples database in .csv format](https://raw.githubusercontent.com/LingConLab/andic_dictionary_examples_database/main/andic_examples.csv). If you spot any problem with the current version of the database, [please open an issue](https://github.com/LingConLab/andic_dictionary_examples_database/issues/new).
 
-To search for words with the *Cyrillic palochka* you can use Latin uppercase "I", digit "1", exclamation mark "!" or the uppercase palochka itself ("Ӏ"). For "ᴴ" you can type Cyrillic "н". Accents are neutralized, e.g. you can search for letters like "ā" by typing just "a". Note that regular expressions are supported (e.g., "." stands for any symbol, ".*" - any symbol zero or more times, ".+" - any symbol 1 or more times).
+To search for words with the *Cyrillic palochka* you can use Latin uppercase "I", digit "1", exclamation mark "!" or the uppercase *palochka* itself ("Ӏ"). For "ᴴ" you can type Cyrillic "н". Accents are neutralized, e.g. you can search for letters like "ā" by typing just "a". Note that regular expressions are supported (e.g., "." stands for any symbol, ".*" - any symbol zero or more times, ".+" - any symbol 1 or more times).
 
 With the corresponding buttons below you can copy, export to *.csv* or *.xlsx* the currently filtered table.
 
