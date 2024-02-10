@@ -11,11 +11,7 @@ letters: ["04C0","04CF","007C"] // palochka or vertical line // на что за
   base: "1",
   letters: ["04C0","04CF","007C"]
 }
-,
-{
-  base: "Ӏ", // palochka
-  letters: ["04CF",] // small palochka
-}
+
 ,
 {
   base: "!",
